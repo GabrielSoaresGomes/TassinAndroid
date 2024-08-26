@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">TassinAndroid</string>
+    <string name="home_hello_world">Hello, World!</string>
+    <string name="text_click_me">Click me</string>
+    <string name="second_title">Title 2</string>
 </resources>
