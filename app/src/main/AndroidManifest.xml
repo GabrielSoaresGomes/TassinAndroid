@@ -15,26 +15,28 @@
     >
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ScreenMainActivity"
             android:exported="true"
-            android:label="Minha aplicação"
+            android:label="Tela principal da aplicação"
         >
 
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
 
         </activity>
 
         <activity
-            android:name=".SecondActivity"
+            android:name=".ScreenDetailActivity"
             android:exported="true"
-            android:label="Segunda tela"
+            android:label="Tela de detalhes da aplicação"
         >
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
 
         </activity>
 

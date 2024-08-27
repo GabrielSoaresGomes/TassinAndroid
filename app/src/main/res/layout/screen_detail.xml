@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    android:orientation="vertical">
+
+    <!-- NAVBAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:background="#C51D1D"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <ImageButton
+            android:id="@+id/btn_back_main"
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Imagem de voltar tela"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="120dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Top Stories"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Imagem de compartilhar"
+            android:scaleType="fitXY"
+            android:src="@drawable/share" />
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Imagem de salvar"
+            android:scaleType="fitXY"
+            android:src="@drawable/bookmark" />
+    </LinearLayout>
+
+    <!-- BODY -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <!-- IMAGEM PRINCIPAL -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/city"
+            />
+
+        <!-- MAIN TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your users can comments with facebook comments"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+        />
+
+        <!-- DATA e HORÁRIO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="26 de Agosto de 2024 - 13:45h"
+            android:textStyle="bold"
+            />
+
+        <!-- PARAGRAFO 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:text="In this short article I will be something you throught some of the excinting features of the Ultimate News App Template"
+        />
+
+        <!-- RESUMO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Rich Text Format Articles"
+        />
+    </LinearLayout>
+
+</LinearLayout>

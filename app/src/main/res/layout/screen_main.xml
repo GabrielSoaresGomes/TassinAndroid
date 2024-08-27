@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    android:orientation="vertical">
+
+    <!-- NAVBAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#C51D1D"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:layout_gravity="center"
+    >
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Imagem do menu hamburguer"
+            android:scaleType="fitXY"
+            android:src="@drawable/hamburger"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="129dp"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Bookmarked"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- BODY -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+    >
+        <!-- IMAGEM PRINCIPAL -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="249dp"
+            android:src="@drawable/city"
+            android:paddingHorizontal="10sp"
+        />
+
+        <!-- HORÁRIO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="9:30 am"
+        />
+
+
+        <!-- MAIN TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A headline article appears larget to grab more attention"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+        />
+
+        <!-- Linha Horizontal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#36000000"
+            android:layout_marginVertical="8sp"
+        />
+
+        <!-- CardContainer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <!-- CARD -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120sp"
+                android:orientation="horizontal"
+            >
+                <!-- IMAGEM CARD -->
+                <ImageView
+                    android:layout_width="220sp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/city"
+                />
+                <!-- DESCRIÇÕES CARD -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="10dp"
+                >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Há 18m"
+                    />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:text="Articles can be posted by authors and administrators"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_top_stories"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="30dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:background="#776F6F"
+            android:fontFamily="sans-serif"
+            android:text="Top Stories"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
